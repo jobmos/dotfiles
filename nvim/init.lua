@@ -6,8 +6,8 @@ vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 
 
-vim.opt.number = true         -- Shows absolute line number on current line
-vim.opt.relativenumber = true -- Shows relative line numbers on other lines
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.diagnostic.config({
   virtual_text = true,
