@@ -14,6 +14,7 @@ vim.diagnostic.config({
 })
 
 vim.opt.undofile = true
+vim.opt.wrap = false
 
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
 
