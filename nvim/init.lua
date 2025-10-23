@@ -17,5 +17,7 @@ vim.opt.undofile = true
 vim.opt.wrap = false
 
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
+vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { desc = "Go to references" })
+vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to definition' })
 
 vim.cmd("colorscheme nightfox")
