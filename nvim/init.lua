@@ -17,6 +17,9 @@ vim.opt.undofile = true
 vim.opt.wrap = false
 vim.opt.clipboard = 'unnamedplus' -- Always copy to clipboard
 
+vim.opt.ignorecase = true -- Always search case insensitive
+vim.opt.smartcase = true -- Case sensitive search when using capital letters
+
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
 vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { desc = "Go to references" })
 vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to definition' })
