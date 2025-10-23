@@ -25,3 +25,11 @@ vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { desc = "Go to r
 vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to definition' })
 
 vim.cmd("colorscheme nightfox")
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking text',
+  group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+})
