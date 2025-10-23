@@ -23,6 +23,8 @@ vim.opt.smartcase = true -- Case sensitive search when using capital letters
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
 vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>', { desc = "Go to references" })
 vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to definition' })
+vim.keymap.set('n', '<C-e>', '4<C-e>', { desc = 'Scroll down 4 lines' })
+vim.keymap.set('n', '<C-y>', '4<C-y>', { desc = 'Scroll up 4 lines' })
 
 vim.cmd("colorscheme nightfox")
 
