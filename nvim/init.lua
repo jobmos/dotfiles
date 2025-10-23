@@ -16,3 +16,5 @@ vim.diagnostic.config({
 vim.opt.undofile = true
 
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
+
+vim.cmd("colorscheme nightfox")
