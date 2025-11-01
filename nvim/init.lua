@@ -5,7 +5,6 @@ vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a T
 vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -16,6 +15,7 @@ vim.diagnostic.config({
 vim.opt.undofile = true
 vim.opt.wrap = false
 vim.opt.clipboard = 'unnamedplus' -- Always copy to clipboard
+vim.opt.autoread = true -- Automatically refresh window on file changes
 
 vim.opt.ignorecase = true -- Always search case insensitive
 vim.opt.smartcase = true -- Case sensitive search when using capital letters
