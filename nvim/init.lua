@@ -26,6 +26,10 @@ vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to 
 vim.keymap.set('n', '<C-e>', '4<C-e>', { desc = 'Scroll down 4 lines' })
 vim.keymap.set('n', '<C-y>', '4<C-y>', { desc = 'Scroll up 4 lines' })
 
+-- Persist selection when shifting tabs
+vim.keymap.set('v', '>', '>gv')
+vim.keymap.set('v', '<', '<gv')
+
 vim.cmd("colorscheme nightfox")
 
 vim.api.nvim_create_autocmd('TextYankPost', {
