@@ -23,5 +23,9 @@ return {
         
         -- Enable basedpyright
         vim.lsp.enable('basedpyright')
+
+        -- Enable typescript language server 
+        -- https://github.com/typescript-language-server/typescript-language-server
+        vim.lsp.enable('ts_ls')
     end,
 }
