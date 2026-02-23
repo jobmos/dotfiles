@@ -43,3 +43,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  desc = "Set indent width to 2 spaces",
+	pattern = "html",
+	command = "setlocal shiftwidth=2 tabstop=2"
+})
