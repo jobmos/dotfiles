@@ -8,6 +8,7 @@ vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "99"  -- Vertical rule at column 99
+vim.opt.cursorline = true -- Highlight cursor row
 
 vim.diagnostic.config({
   virtual_text = true,
