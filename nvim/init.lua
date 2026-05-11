@@ -22,6 +22,8 @@ vim.opt.autoread = true -- Automatically refresh window on file changes
 vim.opt.ignorecase = true -- Always search case insensitive
 vim.opt.smartcase = true -- Case sensitive search when using capital letters
 
+vim.keymap.set({'n', 'i', 'v'}, '<F1>', '<Nop>', { desc = "Disable F1 key (nvim help)."})
+
 vim.keymap.set("n", "<leader>o", "<CMD>Oil<CR>", { desc = "Open Oil" })
 vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, { silent = true, desc = "LSP Code Action" })
 vim.keymap.set('n', 'cr', vim.lsp.buf.rename, { desc = 'LSP Rename' })
