@@ -33,6 +33,8 @@ vim.keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>', { desc = 'Go to 
 vim.keymap.set('n', '<leader>gb', require('gitsigns').blame, { desc = 'Git blame file' })
 vim.keymap.set('n', '<C-e>', '4<C-e>', { desc = 'Scroll down 4 lines' })
 vim.keymap.set('n', '<C-y>', '4<C-y>', { desc = 'Scroll up 4 lines' })
+vim.keymap.set('n', ']h', require('gitsigns').next_hunk, { desc = 'Next git hunk (gitsigns)'})
+vim.keymap.set('n', '[h', require('gitsigns').prev_hunk, { desc = 'Previous git hunk (gitsigns)'})
 
 -- Persist selection when shifting tabs
 vim.keymap.set('v', '>', '>gv')
