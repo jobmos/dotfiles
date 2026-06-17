@@ -1,7 +1,7 @@
 return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
-        ensure_installed = { "basedpyright", "html", "cssls", "ts_ls", "jsonls" },
+        ensure_installed = { "basedpyright", "ruff", "html", "cssls", "ts_ls", "jsonls" },
     },
     dependencies = {
         { "mason-org/mason.nvim", opts = {} },
@@ -24,6 +24,8 @@ return {
         -- Enable basedpyright
         vim.lsp.enable('basedpyright')
 
+        vim.lsp.enable('ruff')
+
         -- Enable typescript language server 
         -- https://github.com/typescript-language-server/typescript-language-server
         vim.lsp.enable('ts_ls')
@@ -43,6 +45,5 @@ return {
           capabilities = capabilities,
         })
         vim.lsp.enable('jsonls')
-
     end,
 }
